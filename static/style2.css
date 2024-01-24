@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'probold'; /* Уникальное имя для вашего шрифта */
+    src: url('87.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas'; /* Уникальное имя для вашего шрифта */
+    src: url('1.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'druk'; /* Уникальное имя для вашего шрифта */
+    src: url('2.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas2'; /* Уникальное имя для вашего шрифта */
+    src: url('3.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'aqum'; /* Уникальное имя для вашего шрифта */
+    src: url('aqum-2-classic.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'Conthrax'; /* Уникальное имя для вашего шрифта */
+    src: url('ConthraxSb-Regular.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+    background: #00ff9c;
+}
+
+button:active {
+    background: #00ff9c;
+}

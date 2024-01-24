@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная часть</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+    .delete-icon img {
+        width: 45px; /* Укажите нужную ширину */
+        height: auto; /* Автоматическое масштабирование высоты */
+        margin-bottom: -18px; /* Нижний отступ, можно изменить значение */
+        filter: invert(100%); /* Инвертируем цвет (делаем иконку белой) */
+    }
+    </style>
+
+</head>
+<body class="admin">
+  
+  <p class=username >Добро, Пожаловать {{ username }}</p1>
+    <form class="adding" action="/add" method="post">
+        <label class="slotname" for="name">Названия слота:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label class="costinput" for="cost">Стоимость:</label>
+        <input type="text" id="cost" name="cost" required>
+
+        <button type="submit">Добавить</button>
+    </form>
+
+<form class="deposit" action="/admin/update_deposit" method="post">
+    <label for="deposit_amount">Напишите сумму депозита:</label>
+    <input type="number" id="deposit_amount" name="deposit_amount" required>
+    <button type="submit">Изменить</button>
+</form>
+
+<form class="resetaction" action="/api/reset" method="post">
+    <button type="submit">Сбросить</button>
+</form>
+  
+  <form action="/view" target="_blank">
+   <button class=bjibutton2 >Зрители</button>
+  </form>
+
+
+    <ul class="Listadmin">
+        {% for i in range(slot_names|length) %}
+            <li class="Listadmin2">
+                <span>{{ loop.index }} {{ slot_names[i] }}</span>
+                <span>Стоимость: {{ purchase_costs[i]|int }} ₽</span>
+                <span>Получено: {{ received_per_slot[i]|int }} ₽</span>
+                <form action="/edit_received/{{ i }}" method="post" style="display:inline;">
+                    <input type="text" name="new_received" placeholder="Сумма полученного ">
+                    <button type="submit">Изменить</button>
+                </form>
+                <a href="/del/{{ i }}" class="delete-icon">
+                    <img src="{{ url_for('static', filename='delete.svg') }}" alt="Delete Icon">
+                </a>
+            </li>
+
+        {% endfor %}
+    </ul>
+        <!--<div class="STATISTIC">
+    <p>Получено: {{ total_received|int }} </p>
+
+    <p>Потрачено: {{ spent|int }} </p>
+
+    <p>Профит: {{ (total_received - spent)|int }} </p>
+
+    <p>Открыто: {{ edited }}/{{ created }} </p>
+
+    <p>Депозит: {{ deposit_amount|int }} </p>
+        </div>-->
+</body>
+</html>

@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'probold'; /* Уникальное имя для вашего шрифта */
+    src: url('87.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas'; /* Уникальное имя для вашего шрифта */
+    src: url('1.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'druk'; /* Уникальное имя для вашего шрифта */
+    src: url('2.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas2'; /* Уникальное имя для вашего шрифта */
+    src: url('3.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'aqum'; /* Уникальное имя для вашего шрифта */
+    src: url('aqum-2-classic.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'Conthrax'; /* Уникальное имя для вашего шрифта */
+    src: url('ConthraxSb-Regular.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+.view-background {
+margin: 0;
+font-family: bebas, druk;
+padding: 20px;
+box-sizing: border-box;
+font-size: 20px;
+background-color: #00ff00;
+}
+
+.admin {
+font-family: 'Source Code Pro', monospace;
+background: #181818;
+color: rgb(255, 255, 255);
+padding: 20px;
+box-sizing: border-box;
+font-size: 20px;
+}
+
+h1 {
+color: #ff4500;
+font-family: 'Source Code Pro', monospace;
+}
+
+form {
+margin-bottom: 20px;
+font-family: 'Source Code Pro', monospace;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-family: 'Source Code Pro', monospace;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  outline: none;
+font-family: 'Source Code Pro', monospace;
+}
+
+button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+    background: #00ff9c;
+}
+
+button:active {
+    background: #00ff9c;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rounded-container {
+    border-radius: 75px;
+    background-color: #181818;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    overflow-y: hidden;
+  overflow: hidden;
+}
+
+.list-container {
+    height: 700px;
+  width: 800px;
+    overflow: hidden; /* Добавлено свойство overflow: auto; чтобы добавить прокрутку при нехватке места */
+    margin-left: 73px;
+    margin-top: -22px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family: probold;
+    font-size: 38px;
+}
+
+.item span:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 15ch;
+}
+
+.sidebar {
+    border-radius: 75px;
+    background-color: #252525;
+    position: absolute;
+    top: 54px;
+    left: 75px;
+    width: 857px;
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+  border: 5px solid #fff;
+}
+
+.values-sidebar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: #fff;
+    font-family: aqum;
+    font-size: 37px;
+}
+
+.values-sidebar1,
+.values-sidebar2,
+.values-sidebar3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.total-received,
+.edited-created,
+.deposit-amount {
+    margin-top: -2px;
+}
+
+/* Costinput */
+.costinput{
+ transform:translatex(360px) translatey(-80px);
+}
+.loginpage{
+  background-color: #252525;
+  color: #fff;
+}
+
+/* Slotname */
+.slotname{
+ transform:translatex(137px) translatey(-2px);
+}
+
+/* Name */
+#name{
+ transform:translatex(137px) translatey(0px);
+}
+
+/* Cost */
+#cost{
+ transform:translatex(360px) translatey(-77px);
+}
+
+/* Heading */
+h1{
+ transform:translatex(0px) translatey(-49px);
+}
+
+/* Adding */
+.adding{
+ transform:translatex(-100px) translatey(0px);
+}
+
+/* Button */
+.adding button{
+ padding-top:11px;
+ height:36px;
+ transform:translatex(364px) translatey(-76px);
+}
+
+.resetaction button {
+  padding-top:11px;
+  height:36px;
+}
+
+.deposit button {
+padding-top:11px;
+height:36px;
+transform:translatex(0px) translatey(2px);
+}
+
+.Listadmin li {
+transform:translatex(-3px) translatey(-250px);
+}
+
+.Listadmin button {
+  padding-top:11px;
+  height:36px;
+  transform:translatex(0px) translatey(2px);
+  }
+
+.img12 {
+    margin-left: 125px;
+  margin-right: 135px;
+  margin-top: 250px;
+}
+
+.img11 {
+  margin-left: 125px;
+  margin-right: 135px;
+  position: relative;
+  top: -30px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Deposit amount */
+#deposit_amount{
+ transform:translatex(0px) translatey(-10px);
+ position:relative;
+ top:-2px;
+ left:-5px;
+}
+
+/* Adding */
+.adding{
+ transform:translatex(-109px) translatey(0px);
+}
+
+/* Cost */
+#cost{
+ transform:translatex(360px) translatey(-84px);
+ position:relative;
+ left:-12px;
+ top:-2px;
+}
+
+/* Button */
+.adding button{
+ transform:translatex(366px) translatey(-83px);
+ position:relative;
+ left:-16px;
+ min-height:40px;
+ padding-top:11px;
+ top:-3px;
+}
+
+/* Button */
+.deposit button{
+ transform:translatex(0px) translatey(-11px);
+ position:relative;
+ left:-4px;
+}
+
+/* Label */
+.deposit label{
+ padding-bottom:2px;
+ transform:translatex(0px) translatey(-12px);
+ position:relative;
+ left:-7px;
+}
+
+/* Name */
+#name{
+ position:relative;
+ top:-4px;
+ left:0px;
+}
+
+/* Slotname */
+.adding .slotname{
+ transform:translatex(121px) translatey(-3px);
+ position:relative;
+ left:16px;
+ top:-2px;
+}
+
+/* Label */
+.deposit label{
+ top:4px;
+}
+
+/* Costinput */
+.adding .costinput{
+ position:relative;
+ top:-3px;
+ left:-12px;
+}
+
+/* Button */
+.Listadmin li button{
+ position:relative;
+ top:-1px;
+}
+
+/* Bjibutton2 */
+form .bjibutton2{
+ transform:translatex(1148px) translatey(-328px);
+}
+
+/* Button */
+.resetaction button{
+ transform:translatex(973px) translatey(-262px);
+}
+
+/* Deposit */
+.deposit{
+ transform:translatex(611px) translatey(-177px);
+}
+
+/* Paragraph */
+.username{
+  font-size: 37px;
+  font-family: bebas2;
+  transform:translatex(32px) translatey(-3px);
+}
+
+/* Name */
+#name{
+ transform:translatex(137px) translatey(3px);
+}
+

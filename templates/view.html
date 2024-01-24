@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Зрительская часть</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body class="view-background">
+
+    <div class="main-container">
+        <!-- Основной контейнер с закругленными углами -->
+        <div class="rounded-container">
+            <!-- Левая панель внутри основного контейнера -->
+            <div class="sidebar">
+                <div class="values-sidebar">
+
+                    <div class="values-sidebar2">
+                        <img src="{{ url_for('static', filename='2.png') }}" alt="2" width="62" height="62" class="img-fluid">
+                        <p id= "deposit-amount" class="deposit-amount">0</p>
+                    </div>
+
+                    <div class="values-sidebar3">
+                        <img src="{{ url_for('static', filename='3.png') }}" alt="3" width="70" height="68" class="img-fluid">
+                        <p id= "edited-created" class="edited-created">0/0</p>
+                    </div>
+
+                    <div class="values-sidebar1">
+                        <img src="{{ url_for('static', filename='1.png') }}" alt="3" width="62" height="62" class="img-fluid">
+                        <p id= "total-received" class="total-received">0</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="imgs12">
+                    <img src="{{ url_for('static', filename='Layer 6 copy.png') }}" alt="6" width="731" height="8" class="img12">
+                </div>
+
+            <div class="list-container" id="listContainer">
+                <ul class="list" id="scrollingList">
+                    {% for i in range(slot_names|length) %}
+                    <li class="item" id="items">
+                        <span>{{ loop.index }} {{ slot_names[i] }}</span>
+                        <span>{{ purchase_costs[i] }}</span>
+                        <span>{{ received_per_slot[i] }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+                <div class="imgs11">
+                    <img src="{{ url_for('static', filename='Layer 6 copy.png') }}" alt="6" width="731" height="8" class="img11">
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

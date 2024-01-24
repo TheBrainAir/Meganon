@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'probold'; /* Уникальное имя для вашего шрифта */
+    src: url('87.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas'; /* Уникальное имя для вашего шрифта */
+    src: url('1.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'druk'; /* Уникальное имя для вашего шрифта */
+    src: url('2.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'bebas2'; /* Уникальное имя для вашего шрифта */
+    src: url('3.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'aqum'; /* Уникальное имя для вашего шрифта */
+    src: url('aqum-2-classic.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@font-face {
+    font-family: 'Conthrax'; /* Уникальное имя для вашего шрифта */
+    src: url('ConthraxSb-Regular.woff') format('woff'); /* Путь к файлу шрифта и его формат */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Dosis;
+    background-color: #181818;
+    color: #ccc;
+}
+
+form {
+    width: 400px; /* Increased width */
+    padding: 30px; /* Increased padding */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px; /* Increased font size */
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px; /* Increased margin */
+}
+
+input {
+    width: 100%; /* Make input full width */
+    padding: 10px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    box-sizing: border-box;
+}
+
+
+button {
+  color: #ccc;
+  display: block;
+  background-color: #512da8;
+  font-size: 12px;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 15px 0;
+  width: 100%;
+}
+
+button:hover {
+    background: #00ff9c;
+}
+
+button:active {
+    background: #00ff9c;
+}
+
+form {
+margin-bottom: 20px;
+font-family: 'Source Code Pro', monospace;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Source Code Pro', monospace;
+}
